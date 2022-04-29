@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter.ttk import Progressbar
 import sys
 from turtle import width
-import home_page
+import login_name
 fenetre =Tk()
 fenetre.resizable(0,0)
 height = 430
@@ -31,7 +31,7 @@ def exit_window():
 
 def passage_window():
     fenetre.destroy()
-    home_page.main()
+    login_name.window.mainloop()
 
 i=0
 def load():

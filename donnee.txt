@@ -1,0 +1,1101 @@
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:49679        DESKTOP-PLFMLAA:49680  ESTABLISHED
+  TCP    127.0.0.1:49680        DESKTOP-PLFMLAA:49679  ESTABLISHED
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:54468    20.199.120.151:https   ESTABLISHED
+  TCP    192.168.0.199:54524    strupy-prod-005:http   ESTABLISHED
+  TCP    192.168.0.199:54573    5.62.54.29:http        ESTABLISHED
+  TCP    192.168.0.199:54730    wo-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:54739    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54740    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54743    20.54.232.160:https    ESTABLISHED
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*       TCP    192.168.0.199:54468    20.199.120.151:https   ESTABLISHED
+  TCP    192.168.0.199:54524    strupy-prod-005:http   ESTABLISHED
+  TCP    192.168.0.199:54573    5.62.54.29:http        ESTABLISHED
+  TCP    192.168.0.199:54730    wo-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:54739    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54740    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54743    20.54.232.160:https    ESTABLISHED
+  TCP    192.168.0.199:54747    20.189.173.7:https     ESTABLISHED
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:59748          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:55248        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:55247    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:55246     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:59749             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:55245            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:55244  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:55243  *:*                    
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:49679        DESKTOP-PLFMLAA:49680  ESTABLISHED
+  TCP    127.0.0.1:49680        DESKTOP-PLFMLAA:49679  ESTABLISHED
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:54468    20.199.120.151:https   ESTABLISHED
+  TCP    192.168.0.199:54524    strupy-prod-005:http   ESTABLISHED
+  TCP    192.168.0.199:54573    5.62.54.29:http        ESTABLISHED
+  TCP    192.168.0.199:54730    wo-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:54739    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54740    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54743    20.54.232.160:https    ESTABLISHED
+  TCP    192.168.0.199:54750    a-0003:https           ESTABLISHED
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:59748          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:55248        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:54971    *:*                    
+  UDP    192.168.0.199:55247    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:54970     *:*                    
+  UDP    192.168.56.1:55246     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:59749             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:55245            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:55244  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:55243  *:*                    
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:49679        DESKTOP-PLFMLAA:49680  ESTABLISHED
+  TCP    127.0.0.1:49680        DESKTOP-PLFMLAA:49679  ESTABLISHED
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:54468    20.199.120.151:https   ESTABLISHED
+  TCP    192.168.0.199:54524    strupy-prod-005:http   ESTABLISHED
+  TCP    192.168.0.199:54573    5.62.54.29:http        ESTABLISHED
+  TCP    192.168.0.199:54730    wo-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:54740    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:54743    20.54.232.160:https    ESTABLISHED
+  TCP    192.168.0.199:54750    a-0003:https           ESTABLISHED
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:59748          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:55248        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:55247    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:55246     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:59749             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:55245            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:55244  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:55243  *:*                    
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    127.0.0.1:57325        DESKTOP-PLFMLAA:57326  ESTABLISHED
+  TCP    127.0.0.1:57326        DESKTOP-PLFMLAA:57325  ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:57364    strupy-prod-001:http   ESTABLISHED
+  TCP    192.168.0.199:57370    52.155.161.106:https   CLOSE_WAIT
+  TCP    192.168.0.199:57384    5.62.54.63:http        ESTABLISHED
+  TCP    192.168.0.199:58564    20.199.120.182:https   ESTABLISHED
+  TCP    192.168.0.199:58566    wb-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:58610    40.77.226.250:https    ESTABLISHED
+  TCP    192.168.0.199:58647    ec2-34-237-73-95:https  ESTABLISHED
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    127.0.0.1:57325        DESKTOP-PLFMLAA:57326  ESTABLISHED
+  TCP    127.0.0.1:57326        DESKTOP-PLFMLAA:57325  ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:57364    strupy-prod-001:http   ESTABLISHED
+  TCP    192.168.0.199:57370    52.155.161.106:https   CLOSE_WAIT
+  TCP    192.168.0.199:57384    5.62.54.63:http        ESTABLISHED
+  TCP    192.168.0.199:58564    20.199.120.182:https   ESTABLISHED
+  TCP    192.168.0.199:58566    wb-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:58610    40.77.226.250:https    ESTABLISHED
+  TCP    192.168.0.199:58647    ec2-34-237-73-95:https  ESTABLISHED
+  TCP    192.168.0.199:58651    20.54.232.160:https    TIME_WAIT
+  TCP    192.168.0.199:58659    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58660    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58668    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58669    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:65310          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:57589        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:57588    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:57587     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:65311             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:57586            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:57585  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:57584  *:*                    
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    127.0.0.1:57325        DESKTOP-PLFMLAA:57326  ESTABLISHED
+  TCP    127.0.0.1:57326        DESKTOP-PLFMLAA:57325  ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:57364    strupy-prod-001:http   ESTABLISHED
+  TCP    192.168.0.199:57370    52.155.161.106:https   CLOSE_WAIT
+  TCP    192.168.0.199:57384    5.62.54.63:http        ESTABLISHED
+  TCP    192.168.0.199:58564    20.199.120.182:https   ESTABLISHED
+  TCP    192.168.0.199:58566    wb-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:58610    40.77.226.250:https    ESTABLISHED
+  TCP    192.168.0.199:58668    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58669    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58672    a23-8-20-241:http      ESTABLISHED
+  TCP    192.168.0.199:58673    a-0003:https           ESTABLISHED
+  TCP    192.168.0.199:58676    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58677    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58678    mad07s25-in-f4:https   ESTABLISHED
+  TCP    192.168.0.199:58679    mad07s25-in-f4:https   ESTABLISHED
+  TCP    192.168.0.199:58680    a23-214-200-136:https  ESTABLISHED
+  TCP    192.168.0.199:58681    185.221.87.248:https   ESTABLISHED
+  TCP    192.168.0.199:58682    185.221.87.248:https   ESTABLISHED
+  TCP    192.168.0.199:58683    185.221.87.248:https   ESTABLISHED
+  TCP    192.168.0.199:58684    li572-129:https        ESTABLISHED
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:65310          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:57589        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:57588    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:57587     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:65311             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:57586            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:57585  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:57584  *:*                    
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    127.0.0.1:57325        DESKTOP-PLFMLAA:57326  ESTABLISHED
+  TCP    127.0.0.1:57326        DESKTOP-PLFMLAA:57325  ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:57364    strupy-prod-001:http   ESTABLISHED
+  TCP    192.168.0.199:57370    52.155.161.106:https   CLOSE_WAIT
+  TCP    192.168.0.199:57384    5.62.54.63:http        ESTABLISHED
+  TCP    192.168.0.199:58564    20.199.120.182:https   ESTABLISHED
+  TCP    192.168.0.199:58566    wb-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:58610    40.77.226.250:https    ESTABLISHED
+  TCP    192.168.0.199:58672    a23-8-20-241:http      TIME_WAIT
+  TCP    192.168.0.199:58676    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58677    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58678    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:58681    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58682    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58683    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58684    li572-129:https        TIME_WAIT
+  TCP    192.168.0.199:58686    mad07s25-in-f4:https   TIME_WAIT
+  TCP    192.168.0.199:58687    104.18.17.188:https    TIME_WAIT
+  TCP    192.168.0.199:58690    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58691    35.188.42.15:https     TIME_WAIT
+  TCP    192.168.0.199:58692    ec2-35-162-40-201:https  TIME_WAIT
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    127.0.0.1:57325        DESKTOP-PLFMLAA:57326  ESTABLISHED
+  TCP    127.0.0.1:57326        DESKTOP-PLFMLAA:57325  ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:57364    strupy-prod-001:http   ESTABLISHED
+  TCP    192.168.0.199:57370    52.155.161.106:https   CLOSE_WAIT
+  TCP    192.168.0.199:57384    5.62.54.63:http        ESTABLISHED
+  TCP    192.168.0.199:58564    20.199.120.182:https   ESTABLISHED
+  TCP    192.168.0.199:58566    wb-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:58610    40.77.226.250:https    ESTABLISHED
+  TCP    192.168.0.199:58714    ec2-34-237-73-95:https  ESTABLISHED
+  TCP    192.168.0.199:58715    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58716    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58717    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58718    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58720    a2-21-39-22:http       TIME_WAIT
+  TCP    192.168.0.199:58722    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.0.199:58723    185.221.87.248:https   TIME_WAIT
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:49568          *:*                    
+  UDP    0.0.0.0:52272          *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:56911          *:*                    
+  UDP    0.0.0.0:62196          *:*                    
+  UDP    0.0.0.0:62483          *:*                    
+  UDP    0.0.0.0:65310          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:57589        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:57588    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:57587     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:65311             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:57586            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:57585  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:57584  *:*                    
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       êtat
+  TCP    0.0.0.0:7              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:9              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:13             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:17             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:19             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:80             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:135            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:445            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5040           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5357           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:5500           DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49664          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49665          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49666          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49667          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49668          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:49670          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    0.0.0.0:50376          DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:1521         DESKTOP-PLFMLAA:50373  ESTABLISHED
+  TCP    127.0.0.1:12025        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12110        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12119        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12143        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12465        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12563        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12993        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:12995        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:27275        DESKTOP-PLFMLAA:0      LISTENING
+  TCP    127.0.0.1:50373        DESKTOP-PLFMLAA:1521   ESTABLISHED
+  TCP    127.0.0.1:57325        DESKTOP-PLFMLAA:57326  ESTABLISHED
+  TCP    127.0.0.1:57326        DESKTOP-PLFMLAA:57325  ESTABLISHED
+  TCP    192.168.0.199:139      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.0.199:57364    strupy-prod-001:http   ESTABLISHED
+  TCP    192.168.0.199:57370    52.155.161.106:https   CLOSE_WAIT
+  TCP    192.168.0.199:57384    5.62.54.63:http        ESTABLISHED
+  TCP    192.168.0.199:58564    20.199.120.182:https   ESTABLISHED
+  TCP    192.168.0.199:58566    wb-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.199:58610    40.77.226.250:https    ESTABLISHED
+  TCP    192.168.0.199:58729    20.189.173.9:https     ESTABLISHED
+  TCP    192.168.0.199:58774    20.54.232.160:https    ESTABLISHED
+  TCP    192.168.56.1:139       DESKTOP-PLFMLAA:0      LISTENING
+  TCP    192.168.56.1:2031      DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:7                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:9                 DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:13                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:17                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:19                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:80                DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:135               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:445               DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5357              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:5500              DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49664             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49665             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49666             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49667             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49668             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:49670             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::]:50376             DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12025            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12110            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12119            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12143            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12465            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12563            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12993            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:12995            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:27275            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [::1]:49669            DESKTOP-PLFMLAA:0      LISTENING
+  TCP    [fe80::7d43:9215:7f62:644%9]:2031  DESKTOP-PLFMLAA:0      LISTENING
+  UDP    0.0.0.0:7              *:*                    
+  UDP    0.0.0.0:9              *:*                    
+  UDP    0.0.0.0:13             *:*                    
+  UDP    0.0.0.0:17             *:*                    
+  UDP    0.0.0.0:19             *:*                    
+  UDP    0.0.0.0:123            *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:3702           *:*                    
+  UDP    0.0.0.0:5050           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5353           *:*                    
+  UDP    0.0.0.0:5355           *:*                    
+  UDP    0.0.0.0:52769          *:*                    
+  UDP    0.0.0.0:54671          *:*                    
+  UDP    0.0.0.0:65310          *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    127.0.0.1:53416        *:*                    
+  UDP    127.0.0.1:54669        *:*                    
+  UDP    127.0.0.1:57589        *:*                    
+  UDP    192.168.0.199:137      *:*                    
+  UDP    192.168.0.199:138      *:*                    
+  UDP    192.168.0.199:1900     *:*                    
+  UDP    192.168.0.199:57588    *:*                    
+  UDP    192.168.56.1:137       *:*                    
+  UDP    192.168.56.1:138       *:*                    
+  UDP    192.168.56.1:1900      *:*                    
+  UDP    192.168.56.1:57587     *:*                    
+  UDP    [::]:7                 *:*                    
+  UDP    [::]:9                 *:*                    
+  UDP    [::]:13                *:*                    
+  UDP    [::]:17                *:*                    
+  UDP    [::]:19                *:*                    
+  UDP    [::]:123               *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:3702              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5353              *:*                    
+  UDP    [::]:5355              *:*                    
+  UDP    [::]:52770             *:*                    
+  UDP    [::]:65311             *:*                    
+  UDP    [::1]:1900             *:*                    
+  UDP    [::1]:57586            *:*                    
+  UDP    [::1]:63419            *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:1900  *:*                    
+  UDP    [fe80::5551:f15e:8231:840%34]:57585  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:1900  *:*                    
+  UDP    [fe80::7d43:9215:7f62:644%9]:57584  *:*                    

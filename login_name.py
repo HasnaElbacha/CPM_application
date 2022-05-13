@@ -27,7 +27,7 @@ def main_login_name():
             self.image = self.img_copy.resize((new_width, new_height))
             self.background_image = ImageTk.PhotoImage(self.image)
             self.background.configure(image =  self.background_image)
-
+    global username_entry
     e = Example(window)
     e.pack(fill=BOTH, expand=YES)
     droit_label=Label(window,bg='white',width=0,height=40)
@@ -101,7 +101,7 @@ def main_login_name():
     txt='J\'ai pas un compte !'
     heading=Button(window,text=txt,font=('yu gothic ui' ,15,'italic'),bg='#040405',fg='white', border=0 ,cursor='hand2',takefocus=0,command=passregister)
     heading.place(x=1050,y=415)
-    
+     
     window.mainloop()
     
 # main_login_name()

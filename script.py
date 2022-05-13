@@ -1,20 +1,40 @@
+# from distutils import text_file
+from datetime import date
 import subprocess 
-import time,csv
+import time
+import sqlite3
+import csv
+
 def convert(start_time): 
     start_time = start_time % (24 * 3600) 
     hour = start_time // 3600
     start_time %= 3600
     minutes = start_time // 60
     start_time %= 60
-    return "%d:%02d" % (hour, minutes) 
+    return "%d:%02d:%d" % (hour, minutes,start_time) 
 def executeSomething(): 
    file_ = open("donnee.txt", "a") 
-   x=subprocess.Popen("netstat -a", stdout=file_) 
+   x=subprocess.Popen("netstat -a ", stdout=file_) 
    print ("code retour:",x.wait())
    print ("sortie standard")
-   print (x.stdout.read())
    file_.close()
-   time.sleep(10) 
+   with open('donnee.txt',encoding="unicode_escape") as f:
+         for line in f:
+            start_time=time.time()
+            timenow=convert(start_time)
+            today = date.today()
+            if '20.199.120.151:https' in line.split() :
+               adresse='20.199.120.151:https'
+               file = open("file.txt", "a")
+               file.write(adresse[0:14]+';'+str(today)+';'+timenow+'\n')
+               file.close()
+               txt_file=r"file.txt"
+               csv_file=r"script.csv"
+               in_txt=csv.reader(open(txt_file,"r"),delimiter=";")
+               outt_csv=csv.writer(open(csv_file,"w"))
+               outt_csv.writerows(in_txt)
+               del outt_csv
+   time.sleep(20) 
 while True:
    start_time=time.time()
    timenow=convert(start_time)
@@ -22,6 +42,11 @@ while True:
       print(timenow)
       f = open('donnee.txt', 'r+')
       f.truncate(0)
+      conn = sqlite3.connect('.\\db\\connec.db')
+      cursor = conn.cursor()
+      cursor.execute('DELETE FROM connection ')
+      conn.commit()
+      time.sleep(20)
    else:  
       print(timenow)
       executeSomething()

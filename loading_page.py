@@ -3,7 +3,8 @@ from tkinter import *
 from tkinter.ttk import Progressbar
 import sys
 from turtle import width
-import acceuil
+import admin_expl
+import script_manuel
 fenetre =Tk()
 fenetre.resizable(0,0)
 height = 470
@@ -31,8 +32,7 @@ def exit_window():
     
 def passage_window():
     fenetre.destroy()
-    acceuil.main_home()
-
+    admin_expl.mainadminempl()
 i=0
 def load():
     global i
@@ -42,7 +42,6 @@ def load():
         progress_label.after(1000,load)
         progress['value']=10*i
         i=i+1
-        
 fenetre.after(10000,passage_window)
        
 load()

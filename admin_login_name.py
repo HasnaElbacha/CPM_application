@@ -11,6 +11,7 @@ from tkinter import messagebox as ms
 import sqlite3
 import admin_expl
 import admin_login_pwd
+
 def mainlogin_name():
     fenetre =Tk()
     fenetre.resizable(0,0)
@@ -64,20 +65,20 @@ def mainlogin_name():
             cursor.execute('SELECT * FROM register WHERE username ="'+Username+'"')
             results = cursor.fetchall()
             print(results)
-            if (Username=="admin"):
+            if Username=="admin" or Username=="ADMIN" or Username=="Admin" :
                 passloginpwd()
                 print(results)
+                
             else:   
-                   print(results)
-                   ms.showerror('Erreur', 'vous n\'êtes pas l\'administrateur')
-                   
+                print(results)
+                ms.showerror('Erreur', 'vous n\'êtes pas l\'administrateur')            
     #************************************************************************************            
     def passloginpwd():
         fenetre.destroy()
         admin_login_pwd.main_login_pwd()
     login=Button(fenetre,image=photo_login, font=('yu gothic ui',13,'bold'),width=210,height=50,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=Search)
     login.place(x=210,y=330)
-    
+
     def retour_acceuil():
         fenetre.destroy()
         admin_expl.mainadminempl()
@@ -90,7 +91,10 @@ def mainlogin_name():
     def passregister():
         fenetre.destroy()
         register.main_register()
-    
+        
     fenetre.mainloop()
+    return username_entry.get()
 
 # mainlogin_name()
+
+    

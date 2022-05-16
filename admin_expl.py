@@ -23,7 +23,7 @@ def mainadminempl():
     
    img=PhotoImage(file='.\\logo_back_remove.gif')
    bg_label=Label(fenetre,image=img,bg='black')
-   bg_label.place(x=150,y=10)  
+   bg_label.place(x=150,y=30)  
    exit_btn=Button(fenetre,text='X',command=lambda:exit_window(),font=("yu gothic ui",13,'bold'),fg='white',bg='black',bd=0,activebackground='grey')
    exit_btn.place(x=626,y=0)
    def home():
@@ -36,17 +36,17 @@ def mainadminempl():
    resize_btn_admin = btn_admin.resize((90,100))
    photo_admin=ImageTk.PhotoImage(resize_btn_admin)
    loginad=Button(fenetre,image=photo_admin, font=('yu gothic ui',13,'bold'),width=90,height=100,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=home)
-   loginad.place(x=140,y=240)
+   loginad.place(x=150,y=240)
    headingad=Button(fenetre,text='Admin',font=('yu gothic ui' ,15,'italic'),bg='#040405',fg='white', border=0 ,cursor='hand2',takefocus=0,command=home)
-   headingad.place(x=140,y=350)
+   headingad.place(x=150,y=350)
 
    btn_empl=Image.open('.\\employeeblue.png')
    resize_btn_empl = btn_empl.resize((90,100))
    photo_empl=ImageTk.PhotoImage(resize_btn_empl)
    loginem=Button(fenetre,image=photo_empl, font=('yu gothic ui',13,'bold'),width=90,height=100,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=homee)
-   loginem.place(x=390,y=240)
+   loginem.place(x=400,y=240)
    headingem=Button(fenetre,text='Employées',font=('yu gothic ui' ,15,'italic'),bg='#040405',fg='white', border=0 ,cursor='hand2',takefocus=0,command=homee)
-   headingem.place(x=385,y=350)
+   headingem.place(x=395,y=350)
    fenetre.mainloop()
 
 # mainadminempl()

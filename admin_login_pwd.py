@@ -10,6 +10,7 @@ import sqlite3
 import admin_expl
 import mode
 import forgetsecond
+import admin_login_name 
 a=1
 def main_login_pwd():
    import admin_expl
@@ -76,7 +77,7 @@ def main_login_pwd():
             cursor.execute('SELECT * FROM register WHERE password ="'+password+'"')
             results = cursor.fetchall()
             # if user then new window
-            if (password=="admincpm"):
+            if password=="admincpm" or password=="ADMINCPM" or password=="Admincpm" :
                 # retour_acceuil()
                 fenetre.destroy()
                 mode.main_win()
@@ -91,6 +92,7 @@ def main_login_pwd():
                 else:
                    ms.showerror('Erreur', 'Les tentatives sont limités')
                    retour_acceuil()
+            
    login=Button(fenetre,image=photo_login, font=('yu gothic ui',13,'bold'),width=210,height=50,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=Searchpwd)
    login.place(x=75,y=350)
         
@@ -121,6 +123,7 @@ def main_login_pwd():
    hide_code=Image.open('.\\eye_close.png')
    resize_image_hide = hide_code.resize((25,25))
    photo=ImageTk.PhotoImage(resize_image_hide)
+#    print(admin_login_name.mainlogin_name())
 
    fenetre.mainloop()
 # main_login_pwd()

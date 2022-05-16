@@ -39,8 +39,8 @@ def main_win():
             def saisire():
                secondfenetre.destroy()
                table.main_win()
-            saisir=Button(label_img,text="Saisir",font=('yu gothic ui' ,20,'bold'),bg='black',fg='#3488FF',width=20,height=1, border=10 ,cursor='hand2',takefocus=0,command=saisire)
-            saisir.place(x=290,y=240) 
+            saisir=Button(label_img,text="Saisir",font=('yu gothic ui' ,20,'bold'),bg='#e1a451',fg='#170f61',width=20,height=2, border=10 ,cursor='hand2',takefocus=0,command=saisire)
+            saisir.place(x=350,y=30) 
             comp=False
             saisir.after(1000,changecolor)
             
@@ -48,8 +48,8 @@ def main_win():
             def saisire():
                secondfenetre.destroy()
                table.main_win()
-            saisir=Button(label_img,text="Saisir",font=('yu gothic ui' ,20,'bold'),bg='#3488FF',fg='black',width=20,height=1, border=10 ,cursor='hand2',takefocus=0,command=saisire)
-            saisir.place(x=290,y=240) 
+            saisir=Button(label_img,text="Saisir",font=('yu gothic ui' ,20,'bold'),bg='#170f61',fg='#e1a451',width=20,height=2, border=10 ,cursor='hand2',takefocus=0,command=saisire)
+            saisir.place(x=350,y=30) 
             comp=True
             saisir.after(1000,changecolor)
    def passregister():
@@ -103,7 +103,7 @@ def main_win():
    label_bar.place(x=260,y=660)
 #****************************************
    
-   cpu=Image.open('.\\imag_cpm.png')
+   cpu=Image.open('.\\6.png')
    resize_cpu = cpu.resize((1050,660))
    photocpu=ImageTk.PhotoImage(resize_cpu)
    label_img=Label(secondfenetre,image=photocpu, bg="grey",width=1050,height=660,font=('yu gothic ui',11,'bold'))

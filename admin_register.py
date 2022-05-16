@@ -89,14 +89,21 @@ def main_win():
 #***************************************
 #*************************************
 
-   plan=Label(label_img,bg="#DCDCDC",width=144,height=40)
-   plan.place(x=10,y=40)
-   plan1=Label(label_img,bg="#A9A9A9",width=142,height=40)
-   plan1.place(x=10,y=30)
-   plan2=Label(label_img,bg="#808080",width=140,height=40)
-   plan2.place(x=10,y=20)
+   # plan=Label(label_img,bg="#DCDCDC",width=144,height=40)
+   # plan.place(x=10,y=40)
+   cpu=Image.open('.\\arriere.png')
+   resize_cpu = cpu.resize((1050,660))
+   photocpu=ImageTk.PhotoImage(resize_cpu)
+   plan1=Label(label_img,image= photocpu,width=1050,height=660)
+   plan1.place(x=0,y=0) 
+   plan2=Label(plan1,bg="#808080",width=65,height=60)
+   plan2.place(x=280,y=0)
+
+  
+
    username_label=Label(plan2,text='Nom d\'utilisateur',bg='#808080',font=('yu gothic ui',13,'bold'),fg='#0E0E0E')
    username_label.place(x=60,y=60)
+   
    username_entry=Entry(plan2,highlightthickness=0,relief= FLAT,bg='#808080',fg='black',font=('yu gothic ui',12,'bold'),cursor='xterm')
    username_entry.place(x=90,y=100,width=270)
    username_line=Canvas(plan2,width=300,height=2.0,bg='#bdb9b1',highlightthickness=0)
@@ -208,13 +215,13 @@ def main_win():
    def show_pswd():
         hide_code=Button(register,image=photo,bg='grey',activebackground='grey',cursor='hand2',bd=0,command=hide_pswd)
         hide_code.image=photo
-        hide_code.place(x=680,y=355)
+        hide_code.place(x=980,y=345)
         password_entry.config(show='')
 
    def hide_pswd():
         show_code=Button(register,image=photo1,bg='grey',activebackground='grey',cursor='hand2',bd=0,command=show_pswd)
         show_code.image=photo1
-        show_code.place(x=680,y=355)
+        show_code.place(x=980,y=345)
         password_entry.config(show='*')
 
    show_code=Image.open('.\\eye_open.png')
@@ -222,7 +229,7 @@ def main_win():
    photo1=ImageTk.PhotoImage(resize_image_show)
    show_button=Button(register,image=photo1,bg='grey',activebackground='grey',cursor='hand2',bd=0,command=show_pswd)
    show_button.image=photo1
-   show_button.place(x=680,y=355)
+   show_button.place(x=980,y=345)
    hide_code=Image.open('.\\eye_close.png')
    resize_image_hide = hide_code.resize((25,25))
    photo=ImageTk.PhotoImage(resize_image_hide)
@@ -230,13 +237,13 @@ def main_win():
    def show_confi():
         hide_code=Button(register,image=photo,bg='grey',activebackground='grey',cursor='hand2',bd=0,command=hide_confi)
         hide_code.image=photo
-        hide_code.place(x=680,y=485)
+        hide_code.place(x=980,y=475)
         confipass_entry.config(show='')
 
    def hide_confi():
         show_code=Button(register,image=photo1,bg='grey',activebackground='grey',cursor='hand2',bd=0,command=show_confi)
         show_code.image=photo1
-        show_code.place(x=680,y=485)
+        show_code.place(x=980,y=475)
         confipass_entry.config(show='*')
 
    show_code=Image.open('.\\eye_open.png')
@@ -244,24 +251,24 @@ def main_win():
    photo1=ImageTk.PhotoImage(resize_image_show)
    show_button=Button(register,image=photo1,bg='grey',activebackground='grey',cursor='hand2',bd=0,command=show_confi)
    show_button.image=photo1
-   show_button.place(x=680,y=485)
+   show_button.place(x=980,y=475)
    hide_code=Image.open('.\\eye_close.png')
    resize_image_hide = hide_code.resize((25,25))
    photo=ImageTk.PhotoImage(resize_image_hide)
 
    def retour_acceuil():
         register.destroy()
-        home_win_admin.main_win()
+        exploitants.main_win()
    btn_fleche=Image.open('.\\play.png')
    resize_btn_fleche = btn_fleche.resize((30,30))
    photo_fleche=ImageTk.PhotoImage(resize_btn_fleche)
    login=Button(plan2,image=photo_fleche, font=('yu gothic ui',13,'bold'),width=80,height=60,bd=0,bg='#808080',cursor='hand2',activebackground='#040405',command=retour_acceuil)
-   login.place(x=0,y=5)
+   login.place(x=0,y=0)
 
     #*****************************************
    btn_inscrire=Image.open('.\\inscrire.png')
    photo_inscrire=ImageTk.PhotoImage(btn_inscrire)
-   inscrire=Button(register,image=photo_inscrire, font=('yu gothic ui',13,'bold'),width=235,height=50,bd=0,bg='grey',cursor='hand2',activebackground='#040405',command=database)
-   inscrire.place(x=900,y=270)
+   inscrire=Button(plan2,image=photo_inscrire, font=('yu gothic ui',13,'bold'),width=235,height=50,bd=0,bg='grey',cursor='hand2',activebackground='#040405',command=database)
+   inscrire.place(x=110,y=570)
    register.mainloop()
 # main_win()

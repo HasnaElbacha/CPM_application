@@ -39,8 +39,12 @@ def main_register():
     plan.place(x=310,y=170)
     plan1=Label(window,bg="#A9A9A9",width=102,height=35)
     plan1.place(x=310,y=160)
-    plan2=Label(window,bg="#808080",width=100,height=35)
+    cpu=Image.open('.\\arriere.png')
+    resize_cpu = cpu.resize((1050,660))
+    photocpu=ImageTk.PhotoImage(resize_cpu)
+    plan2=Label(window,bg="#808080",image=photocpu, width=1050,height=660)
     plan2.place(x=310,y=150)
+
     username_label=Label(plan2,text='Nom d\'utilisateur',bg='#808080',font=('yu gothic ui',13,'bold'),fg='#0E0E0E')
     username_label.place(x=60,y=60)
     username_entry=Entry(plan2,highlightthickness=0,relief= FLAT,bg='#808080',fg='black',font=('yu gothic ui',12,'bold'),cursor='xterm')

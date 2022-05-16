@@ -12,6 +12,8 @@ import admin_expl
 import parametre
 import exploitants
 import auto_admin
+import auto_admin
+import script
 comp=True
 def main_win():
    
@@ -32,7 +34,7 @@ def main_win():
    compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
    compte.place(x=95,y=55)
 #*******************************************
-   cpu=Image.open('.\\imag_cpm.png')
+   cpu=Image.open('.\\6.png')
    resize_cpu = cpu.resize((1050,660))
    photocpu=ImageTk.PhotoImage(resize_cpu)
    label_img=Label(secondfenetre,image=photocpu,width=1050,height=660,font=('yu gothic ui',11,'bold'))
@@ -44,10 +46,10 @@ def main_win():
    def automatic():
        secondfenetre.destroy()
        auto_admin.main_win()
-   mode_manuel=Button(label_img,text="Mode manuel",font=('yu gothic ui' ,28,'bold'),bg='#e2bc74',fg='#3488FF',width=22,height=7, border=3 ,cursor='hand2',takefocus=0,command=manuel)
-   mode_manuel.place(x=20,y=130) 
-   mode_automatique=Button(label_img,text="Mode automatique",font=('yu gothic ui' ,28,'bold'),bg='#e2bc74',fg='#3488FF',width=22,height=7, border=3,cursor='hand2',takefocus=0,command=automatic)
-   mode_automatique.place(x=530,y=130)
+   mode_manuel=Button(label_img,text="Mode manuel",font=('yu gothic ui' ,28,'bold'),bg='#e1a451',fg='#170f61',width=22,height=2, border=4 ,cursor='hand2',takefocus=3,command=manuel)
+   mode_manuel.place(x=20,y=20) 
+   mode_automatique=Button(label_img,text="Mode automatique",font=('yu gothic ui' ,28,'bold'),bg='#e1a451',fg='#170f61',width=23,height=2, border=4,cursor='hand2',takefocus=3,command=automatic)
+   mode_automatique.place(x=520,y=20)
    lien_maison=Image.open('.\\maison_noir.png')
    photo1=ImageTk.PhotoImage(lien_maison)
    def passehome():
@@ -107,12 +109,12 @@ def main_win():
    btn_flechem=Image.open('.\\play.png')
    resize_btn_flechem = btn_flechem.resize((30,30))
    photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
-   loginm=Button(label_img,image=photo_flechem,width=30,height=30,bd=0,bg='#e2bc75',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
-   loginm.place(x=30,y=140)
+   loginm=Button(label_img,image=photo_flechem,width=30,height=30,bd=0,bg='#e1a451',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=30,y=35)
    btn_flechea=Image.open('.\\play.png')
    resize_btn_flechea = btn_flechea.resize((30,30))
    photo_flechea=ImageTk.PhotoImage(resize_btn_flechea)
-   logina=Button(label_img,image=photo_flechea,width=30,height=30,bd=0,bg='#e2bc75',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
-   logina.place(x=540,y=140)  
+   logina=Button(label_img,image=photo_flechea,width=30,height=30,bd=0,bg='#e1a451',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   logina.place(x=530,y=35)  
    secondfenetre.mainloop()
 # main_win()

@@ -6,7 +6,7 @@ from tkinter import ttk
 from click import command
 from numpy import place
 from tkinter.ttk import Progressbar
-import login_name
+import home_win_admin
 import sqlite3
 from tkinter import messagebox
 import admin_register
@@ -91,10 +91,16 @@ def main_win():
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
    label_bar.place(x=260,y=660)
 #****************************************
-   
+   def retour_acceuil():
+      secondfenetre.destroy()
+      home_win_admin.main_win()
    label_img=Label(secondfenetre, bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
    label_img.place(x=320,y=0)  
-
+   btn_flechea=Image.open('.\\back.png')
+   resize_btn_flechea = btn_flechea.resize((40,40))
+   photo_flechea=ImageTk.PhotoImage(resize_btn_flechea)
+   logina=Button(label_img,image=photo_flechea,width=40,height=40,bd=0,bg='white',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   logina.place(x=0,y=0) 
    # def retour_acceuil():
    #    secondfenetre.destroy()
    #    home_win_admin.main_win()

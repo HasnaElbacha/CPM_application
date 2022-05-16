@@ -11,6 +11,7 @@ from tkinter import messagebox as ms
 import sqlite3
 import admin_expl
 import exp_login_pwd
+import os
 def mainlogin_name():
     fenetre =Tk()
     fenetre.resizable(0,0)
@@ -91,7 +92,8 @@ def mainlogin_name():
     def passregister():
         fenetre.destroy()
         register.main_register()
-    
+    print(os.getlogin())
     fenetre.mainloop()
 
 # mainlogin_name()
+# def name():

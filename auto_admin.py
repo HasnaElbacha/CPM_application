@@ -1,3 +1,4 @@
+from ast import If
 from atexit import register
 from tkinter import *
 from PIL import ImageTk , Image
@@ -12,6 +13,8 @@ import admin_register
 import parametre
 import exploitants
 import mode
+import csv
+import pandas as pd
 comp=True
 def main_win():
    
@@ -106,22 +109,77 @@ def main_win():
    label_img.place(x=320,y=0) 
    tk.Label(label_img, text="Enrgistrement automatique", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=300, y=5)
    tk.Label(label_img,bg="#3488FF",width=200,height=0).place(x=0, y=70)
+   frame1 = tk.LabelFrame(label_img, text="Données")
+   frame1.place(x=200,y=120,height=450, width=650)
+   button2 = tk.Button(label_img, text="Load File")
+   button2.place(rely=0.65, relx=0.30)
+   def acc():
+     file_path =".\\script.csv"
+     try:
+        excel_filename = r"{}".format(file_path)
+        if excel_filename[-4:] == ".csv":
+            df = pd.read_csv(excel_filename)
+        else:
+            df = pd.read_excel(excel_filename)
 
-   barh=Image.open('.\\bar.png')
-   resize_barh = barh.resize((602,2))
-   photo_resize_barh=ImageTk.PhotoImage(resize_barh)
-   tk.Label(label_img,image=photo_resize_barh,width=602,height=2).place(x=160, y=150)
-   tk.Label(label_img,image=photo_resize_barh,width=602,height=2).place(x=160, y=200)
-   barw=Image.open('.\\bar.png')
-   resize_barw = barw.resize((2,450))
-   photo_resize_barw=ImageTk.PhotoImage(resize_barw)  
-   tk.Label(label_img,image=photo_resize_barw,width=2,height=450).place(x=160, y=150)
-   tk.Label(label_img,image=photo_resize_barw,width=2,height=450).place(x=160, y=150) 
+     except ValueError:
+        tk.messagebox.showerror("Information", "The file you have chosen is invalid")
+     except FileNotFoundError:
+        tk.messagebox.showerror("Information", f"No such file as {file_path}")
+
+     tv1.delete(*tv1.get_children())
+     tv1["column"] = list(df.columns)
+     tv1["show"] = "headings"
+     for column in tv1["columns"]:
+      tv1.heading(column, text=column) # let the column heading = column name
+      df.dropna(subset = ["Adresse IP"], inplace=True)
+      df.dropna(subset = ["Date"], inplace=True)
+      df.dropna(subset = ["Heures"], inplace=True)
+      df_rows = df.to_numpy().tolist() # turns the dataframe into a list of lists
+      for row in df_rows:
+               tv1.delete(row)
+   
+   def actualiser():
+      secondfenetre.destroy()
+      main_win()
+   btnActualiser=Button(label_img,text="Actualiser",command=actualiser)
+   btnActualiser.place(x=500,y=590)
+   tv1 = ttk.Treeview(frame1)
+   tv1.place(relheight=1, relwidth=1) # set the height and width of the widget to 100% of its container (frame1).
+   treescrolly = tk.Scrollbar(frame1, orient="vertical", command=tv1.yview) # command means update the yaxis view of the widget
+   treescrollx = tk.Scrollbar(frame1, orient="horizontal", command=tv1.xview) # command means update the xaxis view of the widget
+   tv1.configure(xscrollcommand=treescrollx.set, yscrollcommand=treescrolly.set) # assign the scrollbars to the Treeview Widget
+   treescrollx.pack(side="bottom", fill="x") # make the scrollbar fill the x axis of the Treeview widget
+   treescrolly.pack(side="right", fill="y") # make the scrollbar fill the y axis of the Treeview widget
+   """If the file selected is valid this will load the file into the Treeview"""
+   file_path =".\\script.csv"
+   try:
+        excel_filename = r"{}".format(file_path)
+        if excel_filename[-4:] == ".csv":
+            df = pd.read_csv(excel_filename)
+            print("in condition")
+        else:
+            df = pd.read_excel(excel_filename)
+   except ValueError:
+        tk.messagebox.showerror("Information", "The file you have chosen is invalid")
+   except FileNotFoundError:
+        tk.messagebox.showerror("Information", f"No such file as {file_path}")
+   tv1.delete(*tv1.get_children())
+   tv1["column"] = list(df.columns)
+   tv1["show"] = "headings"
+   for column in tv1["columns"]:
+      tv1.heading(column, text=column) # let the column heading = column name
+      df.dropna(subset = ["Adresse IP"], inplace=True)
+      df.dropna(subset = ["Date"], inplace=True)
+      df.dropna(subset = ["Heures"], inplace=True)
+      print(df)
+      df_rows = df.to_numpy().tolist() # turns the dataframe into a list of lists
+      for row in df_rows:
+            tv1.insert("", "end", values=row)
 #******************************************
    tt="ARC_2022"
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
    label_bar.place(x=260,y=660)
 #****************************************
- 
    secondfenetre.mainloop()
 main_win()

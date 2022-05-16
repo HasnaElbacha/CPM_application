@@ -1,3 +1,4 @@
+import imp
 from tkinter import *
 from PIL import ImageTk , Image
 from tkinter import messagebox as ms
@@ -12,6 +13,7 @@ import admin_expl
 import exp_login_name
 import exp_exploitants
 import auto_exp
+from  admin_login_name import mainlogin_name
 comp=True
 def main_win():
    
@@ -28,11 +30,11 @@ def main_win():
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
    user_icon_label.place(x=50,y=50)
-   txt="------"
+   txt="----"
    compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
    compte.place(x=95,y=55)
 #*******************************************
-   cpu=Image.open('.\\imag_cpm.png')
+   cpu=Image.open('.\\6.png')
    resize_cpu = cpu.resize((1050,660))
    photocpu=ImageTk.PhotoImage(resize_cpu)
    label_img=Label(secondfenetre,image=photocpu,width=1050,height=660,font=('yu gothic ui',11,'bold'))
@@ -44,10 +46,10 @@ def main_win():
    def automatic():
        secondfenetre.destroy()
        auto_exp.main_win()
-   mode_manuel=Button(label_img,text="Mode manuel",font=('yu gothic ui' ,28,'bold'),bg='#e2bc74',fg='#3488FF',width=22,height=7, border=3 ,cursor='hand2',takefocus=0,command=manuel)
-   mode_manuel.place(x=20,y=130) 
-   mode_automatique=Button(label_img,text="Mode automatique",font=('yu gothic ui' ,28,'bold'),bg='#e2bc74',fg='#3488FF',width=22,height=7, border=3,cursor='hand2',takefocus=0,command=automatic)
-   mode_automatique.place(x=530,y=130)
+   mode_manuel=Button(label_img,text="Mode manuel",font=('yu gothic ui' ,28,'bold'),bg='#e1a451',fg='#170f61',width=22,height=2, border=4 ,cursor='hand2',takefocus=0,command=manuel)
+   mode_manuel.place(x=20,y=20) 
+   mode_automatique=Button(label_img,text="Mode automatique",font=('yu gothic ui' ,28,'bold'),bg='#e1a451',fg='#170f61',width=23,height=2, border=4,cursor='hand2',takefocus=0,command=automatic)
+   mode_automatique.place(x=520,y=20)
    lien_maison=Image.open('.\\maison_noir.png')
    photo1=ImageTk.PhotoImage(lien_maison)
    def passehome():
@@ -57,28 +59,7 @@ def main_win():
    icon1.place(x=10,y=270)
    icon1_lb=Button(buttons_label,text="Acceuil" ,bg='#040405',fg='#3488FF', border=1,width=15,height=1,font=('yu gothic ui',15,'bold'))
    icon1_lb.place(x=110,y=270)
-#********************************************
-#    def passregister():
-#       secondfenetre.destroy()
-#       admin_register.main_win()
-#    lien_maison=Image.open('.\\register_grey.png')
-#    photo2=ImageTk.PhotoImage(lien_maison)
-#    icon2=Button(buttons_label,image=photo2,bg='#040405', border=2,width=80,height=50,command=passregister)
-#    icon2.place(x=10,y=290)
-#    icon2_lb=Button(buttons_label,text="Enregistrer" ,bg='#040405',fg='#E5E4E2', border=1,width=15,height=1,font=('yu gothic ui',15,'bold'),command=passregister)
-#    icon2_lb.place(x=110,y=290)
 
-#********************************************
-#    def passepara():
-#       secondfenetre.destroy()
-#       parametre.main_win()
-#    lien_maison=Image.open('.\\parametre_grey.png')
-#    photo3=ImageTk.PhotoImage(lien_maison)
-#    icon3=Button(buttons_label,image=photo3,bg='#040405', border=2,width=80,height=50,command=passepara)
-#    icon3.place(x=10,y=380)
-#    icon3_lb=Button(buttons_label,text="Paramètre" ,bg='#040405',fg='#E5E4E2', border=1,width=15,height=1,font=('yu gothic ui',15,'bold'),command=passepara)
-#    icon3_lb.place(x=110,y=380)
-   
 #*******************************************
    def passexp():
       secondfenetre.destroy()
@@ -91,11 +72,11 @@ def main_win():
    icon4_lb.place(x=110,y=360)
 #*******************************************
    user_icon=Image.open('.\\logo_back_remove.gif')
-   resize_image = user_icon.resize((170,120))
+   resize_image = user_icon.resize((190,150))
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=70,y=580)
+   user_icon_label.place(x=60,y=500)
 #******************************************
    tt="ARC_2022"
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
@@ -107,12 +88,12 @@ def main_win():
    btn_flechem=Image.open('.\\play.png')
    resize_btn_flechem = btn_flechem.resize((30,30))
    photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
-   loginm=Button(label_img,image=photo_flechem,width=30,height=30,bd=0,bg='#e2bc75',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
-   loginm.place(x=30,y=140)
+   loginm=Button(label_img,image=photo_flechem,width=30,height=30,bd=0,bg='#e1a451',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=30,y=35)
    btn_flechea=Image.open('.\\play.png')
    resize_btn_flechea = btn_flechea.resize((30,30))
    photo_flechea=ImageTk.PhotoImage(resize_btn_flechea)
-   logina=Button(label_img,image=photo_flechea,width=30,height=30,bd=0,bg='#e2bc75',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
-   logina.place(x=540,y=140)  
+   logina=Button(label_img,image=photo_flechea,width=30,height=30,bd=0,bg='#e1a451',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   logina.place(x=540,y=35)  
    secondfenetre.mainloop()
 # main_win()

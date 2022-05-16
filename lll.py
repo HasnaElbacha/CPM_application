@@ -1,13 +1,13 @@
-from tkinter import *
-#read the file
-file = open("file.txt", "r")
-courses = file.readlines()
-print(courses)
-
-root = Tk()
-
-for course in courses:
-    temp_text = courses
-    Label(root, text=temp_text,bg="red",fg="black",width=300).pack()
-
-mainloop()
+test_list = [[1,2], [4,5], [1,2], [4,5], [1,2]]
+print ("The original list is : " +  str(test_list))
+  
+# using naive method
+# to remove duplicated 
+# from list 
+res = []
+for i in test_list:
+    if i not in res:
+        res.append(i)
+  
+# printing list after removal 
+print ("The list after removing duplicates : " + str(res))

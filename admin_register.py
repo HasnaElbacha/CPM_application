@@ -16,6 +16,8 @@ def main_win():
    
    register =Tk()
    register.state("zoomed")
+   register.iconbitmap('lo.ico')
+   register.title('ARC')
    register.config(background="#FFFFFF")
    buttons_label = Label(register, bg="black" ,height=237,width=45)
    buttons_label.place(x=0,y=0)
@@ -26,10 +28,10 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=50,y=50)
+   user_icon_label.place(x=70,y=70)
    txt="Admin"
-   compte=Label(register,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
-   compte.place(x=95,y=55)
+   compte=Label(register,text=txt,bg="black",fg="grey",width=6,height=1,font=('yu gothic ui',16,'bold'))
+   compte.place(x=120,y=75)
   
 #********************************************
    
@@ -77,7 +79,7 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=70,y=580)
+   user_icon_label.place(x=50,y=580)
 #******************************************
    tt="ARC_2022"
    label_bar=Label(register,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
@@ -91,13 +93,13 @@ def main_win():
 
    # plan=Label(label_img,bg="#DCDCDC",width=144,height=40)
    # plan.place(x=10,y=40)
-   cpu=Image.open('.\\arriere.png')
-   resize_cpu = cpu.resize((1050,660))
+   cpu=Image.open('.\\bb.png')
+   resize_cpu = cpu.resize((1070,690))
    photocpu=ImageTk.PhotoImage(resize_cpu)
-   plan1=Label(label_img,image= photocpu,width=1050,height=660)
-   plan1.place(x=0,y=0) 
-   plan2=Label(plan1,bg="#808080",width=65,height=60)
-   plan2.place(x=280,y=0)
+   plan1=Label(label_img,image= photocpu,width=1070,height=690)
+   plan1.place(x=-10,y=-5) 
+   plan2=Label(plan1,bg="#808080",width=65,height=40)
+   plan2.place(x=280,y=20)
 
   
 
@@ -199,7 +201,7 @@ def main_win():
                 cursor.execute('select * from register where username= "'+username+'"and email="'+email+'" and password="'+password_conf+'"')
                 result=cursor.fetchall()
                 if(result):
-                    ms.showinfo('Erreir', 'Compte existe déjà')
+                    ms.showerror('Erreir', 'Compte existe déjà')
                 else:
                     cursor.execute('INSERT INTO register (username,email,password,password_conf) VALUES ("'+username+'","'+email+'","'+password+'","'+password_conf+'")')
                     conn.commit()
@@ -259,16 +261,16 @@ def main_win():
    def retour_acceuil():
         register.destroy()
         exploitants.main_win()
-   btn_fleche=Image.open('.\\play.png')
-   resize_btn_fleche = btn_fleche.resize((30,30))
-   photo_fleche=ImageTk.PhotoImage(resize_btn_fleche)
-   login=Button(plan2,image=photo_fleche, font=('yu gothic ui',13,'bold'),width=80,height=60,bd=0,bg='#808080',cursor='hand2',activebackground='#040405',command=retour_acceuil)
-   login.place(x=0,y=0)
+   btn_flechem=Image.open('.\\play.png')
+   resize_btn_flechem = btn_flechem.resize((30,30))
+   photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
+   loginm=Button(buttons_label,image=photo_flechem,width=30,height=30,bd=0,bg='black',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=5,y=10) 
 
     #*****************************************
    btn_inscrire=Image.open('.\\inscrire.png')
    photo_inscrire=ImageTk.PhotoImage(btn_inscrire)
    inscrire=Button(plan2,image=photo_inscrire, font=('yu gothic ui',13,'bold'),width=235,height=50,bd=0,bg='grey',cursor='hand2',activebackground='#040405',command=database)
-   inscrire.place(x=110,y=570)
+   inscrire.place(x=110,y=540)
    register.mainloop()
 # main_win()

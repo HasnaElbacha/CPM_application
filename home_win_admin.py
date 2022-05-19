@@ -16,6 +16,8 @@ def main_win():
    
    secondfenetre =Tk()
    secondfenetre.state("zoomed")
+   secondfenetre.iconbitmap('lo.ico')
+   secondfenetre.title('ARC')
    secondfenetre.config(background="#FFFFFF")
    buttons_label = Label(secondfenetre, bg="black" ,height=237,width=45)
    buttons_label.place(x=0,y=0)

@@ -13,7 +13,6 @@ def script():
     start_time %= 60
     return "%d:%02d:%d" % (hour, minutes,start_time) 
   def executeSomething(): 
-   time.sleep(30)
    file_ = open("donnee.txt", "a") 
    x=subprocess.Popen("netstat -a ", stdout=file_) 
    print ("code retour:",x.wait())
@@ -24,8 +23,8 @@ def script():
             start_time=time.time()
             timenow=convert(start_time)
             today = date.today()
-            if '20.199.120.85:https' in line.split() :
-               adresse='20.199.120.85:https'
+            if '20.199.120.151:https' in line.split() :
+               adresse='20.199.120.151:https'
                info=adresse[0:13]+';'+str(today)+';'+timenow+"\n"
                if info not in f:
                   file = open("file.txt", "a")
@@ -37,11 +36,11 @@ def script():
                   outt_csv=csv.writer(open(csv_file,"w"))
                   outt_csv.writerows(in_txt)
                   del outt_csv
-
+                  time.sleep(30)
   while True:
    start_time=time.time()
    timenow=convert(start_time)
-   if timenow=="0:00":
+   if timenow=="22:59":
       print(timenow)
       f = open('donnee.txt', 'r+')
       f.truncate(0)
@@ -56,6 +55,7 @@ def script():
       # time.sleep(20)
    else:  
       print(timenow)
-      executeSomething()
-      
-# script()    
+      executeSomething() 
+script()    
+# f = open('donnee.txt', 'r+')
+# f.truncate(0)

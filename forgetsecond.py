@@ -69,6 +69,7 @@ def mainlogin_name():
         else:
             if(result):
                 user=email
+                print(user)
                 with conn:
                     cursor = conn.cursor()
                 cursor.execute('select password from register where email= "'+email+'"')
@@ -79,34 +80,25 @@ def mainlogin_name():
             
                 try:
                     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-                    server.login("ARC.app1@gmail.com", "Hassena1")
-                    server.sendmail("expediteur@address.com",user,  "subject: test \nce message vient de python")
+                    server.login("elbachahasna2@gmail.com", "lokckvgnfxwhiwpg")
+                    server.sendmail("expediteur@address.com",user,  "subject: test \nBonjour ,"+str(user)+"\nVotre mot de passe de ARC est : "+str(txte))
                     server.quit()
+                    ms.showinfo('Réussi', 'Email envoyer')
+                    
                 except:
-                    # messagebox.showerror("Réussi",'Voila votre mot de passe')
-                    # email_label=Label(fenetre,text='Nom d\'utilisateur',bg='#040405',font=('yu gothic ui',13,'bold'),fg='#ACACAC')
-                    # email_label.place(x=60,y=60)
-                    # email_line=Canvas(fenetre,width=300,height=2.0,bg='#bdb9b1',highlightthickness=0)
-                    # email_line.place(x=65,y=130)
-                    #*****************************************
-                    # email_icon=Image.open('.\\user_icon.png')
+                    ms.showerror('Erreur', 'Email non envoyer!!!')
+                    # psw_label=Label(fenetre,text='votre Mot de passe ',bg='black',font=('yu gothic ui',14,'bold'),fg='#3488FF')
+                    # psw_label.place(x=60,y=330) "subject:Récupération de mot de passe \nBonjour ,"+str(user)+"\nVotre mot de passe de ARC est : "+str(txte)
+                    # ent_label=Label(fenetre,text=txte,bg='black',font=('yu gothic ui',13,'bold'),fg='white')
+                    # ent_label.place(x=90,y=360)
+                    # pwd_line=Canvas(fenetre,width=200,height=2.0,bg='#bdb9b1',highlightthickness=0)
+                    # pwd_line.place(x=65,y=390)
+                    # email_icon=Image.open('.\\paswd_icon.png')
                     # resize_image_user = email_icon.resize((25,25))
                     # photo=ImageTk.PhotoImage(resize_image_user)
-                    # email_icon_label=Label(fenetre,image=photo,bg='#808080')
+                    # email_icon_label=Label(fenetre,image=photo,bg='black')
                     # email_icon_label.image=photo
-                    # email_icon_label.place(x=60,y=100)
-                    psw_label=Label(fenetre,text='votre Mot de passe ',bg='black',font=('yu gothic ui',14,'bold'),fg='#3488FF')
-                    psw_label.place(x=60,y=330)
-                    ent_label=Label(fenetre,text=txte,bg='black',font=('yu gothic ui',13,'bold'),fg='white')
-                    ent_label.place(x=90,y=360)
-                    pwd_line=Canvas(fenetre,width=200,height=2.0,bg='#bdb9b1',highlightthickness=0)
-                    pwd_line.place(x=65,y=390)
-                    email_icon=Image.open('.\\paswd_icon.png')
-                    resize_image_user = email_icon.resize((25,25))
-                    photo=ImageTk.PhotoImage(resize_image_user)
-                    email_icon_label=Label(fenetre,image=photo,bg='black')
-                    email_icon_label.image=photo
-                    email_icon_label.place(x=55,y=360)
+                    # email_icon_label.place(x=55,y=360)
                 
             else:
                ms.showerror('Erreur', 'Cette adresse n\'existe pas!!!')

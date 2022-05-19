@@ -12,12 +12,14 @@ from tkinter import messagebox
 import admin_register
 import register
 import exp_mode
-import parametre
+import admin_expl
 import exp_exploitants
 comp=True
-def main_win():
+def main_win(Username):
    
    secondfenetre =Tk()
+   secondfenetre.iconbitmap('lo.ico')
+   secondfenetre.title('ARC')
    secondfenetre.state("zoomed")
    secondfenetre.config(background="#FFFFFF")
    buttons_label = Label(secondfenetre, bg="black" ,height=237,width=45)
@@ -29,10 +31,10 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=50,y=50)
-   txt="-------"
+   user_icon_label.place(x=45,y=110)
+   txt=Username
    compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
-   compte.place(x=95,y=55)
+   compte.place(x=90,y=115)
   
 #********************************************
    def passregister():
@@ -40,7 +42,7 @@ def main_win():
       register.main_register()
    def passacceuil():
        secondfenetre.destroy()
-       exp_mode.main_win()
+       exp_mode.main_win(Username)
    lien_maison=Image.open('.\\maison_noir.png')
    photo1=ImageTk.PhotoImage(lien_maison)
    icon1=Button(buttons_label,image=photo1,bg='#3488FF', border=2,width=80,height=50,command=passacceuil)
@@ -50,7 +52,7 @@ def main_win():
 
    def passexp():
       secondfenetre.destroy()
-      exp_exploitants.main_win()
+      exp_exploitants.main_win(Username)
    lien_maison=Image.open('.\\expl_grey.png')
    photo4=ImageTk.PhotoImage(lien_maison)
    icon4=Button(buttons_label,image=photo4,bg='#040405', border=2,width=80,height=50,command=passexp)
@@ -59,17 +61,24 @@ def main_win():
    icon4_lb.place(x=110,y=360)
 #*******************************************
    user_icon=Image.open('.\\logo_back_remove.gif')
-   resize_image = user_icon.resize((170,120))
+   resize_image = user_icon.resize((190,150))
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=70,y=580)
+   user_icon_label.place(x=50,y=500)
 #******************************************
    tt="ARC_2022"
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
    label_bar.place(x=260,y=660)
 #****************************************
-   
+   def retour_acceuil():
+      secondfenetre.destroy()
+      admin_expl.mainadminempl()
+   btn_flechem=Image.open('.\\play.png')
+   resize_btn_flechem = btn_flechem.resize((30,30))
+   photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
+   loginm=Button(buttons_label,image=photo_flechem,width=30,height=30,bd=0,bg='black',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=5,y=20)
    label_img=Label(secondfenetre, bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
    label_img.place(x=320,y=0)  
    def GetValue(event):
@@ -158,8 +167,11 @@ def main_win():
    global e2
    global e3
    global e4
-   tk.Label(label_img, text="Registation des connexions", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=300, y=5)
-   tk.Label(label_img,bg="#3488FF",width=200,height=0).place(x=0, y=70)
+   cpu=Image.open('.\\bar_titre.png')
+   resize_cpu = cpu.resize((1070,70))
+   photocpu=ImageTk.PhotoImage(resize_cpu)
+   label_titre=Label(label_img,image=photocpu,width=1070,height=70,font=('yu gothic ui',11,'bold'))
+   label_titre.place(x=-5,y=-5) 
    tk.Label(label_img, text="ID de l'information", fg="#040405",bg="white" ,font=("Helvetica",13,"bold")).place(x=150, y=250)
    Label(label_img, text="Adresse ip", fg="#040405",bg="white" ,font=("Helvetica",13,"bold")).place(x=350, y=250)
    Label(label_img, text="Date", fg="#040405",bg="white" ,font=("Helvetica",13,"bold")).place(x=550, y=250)
@@ -179,7 +191,7 @@ def main_win():
 
    def actialiser():
        secondfenetre.destroy()
-       main_win()
+       main_win(Username)
    Button(label_img, text="Inserer",command = Add,height=2, width= 13,bg='#3488FF',font=("Helvetica",14,"bold"),fg="white").place(x=340, y=440)
    Button(label_img, text="Acualiser",command = actialiser,height=2, width= 13,bg='#3488FF',font=("Helvetica",14,"bold"),fg="white").place(x=540, y=440)
 

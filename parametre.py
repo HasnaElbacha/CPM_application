@@ -15,14 +15,18 @@ import mode
 import exploitants
 import home_win_admin
 
+
 comp=True
 def main_win():
    
    secondfenetre =Tk()
+   secondfenetre.iconbitmap('lo.ico')
+   secondfenetre.title('ARC')
    secondfenetre.state("zoomed")
    secondfenetre.config(background="#FFFFFF")
    buttons_label = Label(secondfenetre, bg="black" ,height=237,width=45)
    buttons_label.place(x=0,y=0)
+
 
    #***************************************
    user_icon=Image.open('.\\compte_.png')
@@ -30,10 +34,10 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=50,y=50)
+   user_icon_label.place(x=70,y=70)
    txt="Admin"
-   compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
-   compte.place(x=95,y=55)
+   compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=6,height=1,font=('yu gothic ui',16,'bold'))
+   compte.place(x=120,y=75)
   
 #********************************************
    def passregister():
@@ -83,24 +87,24 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=70,y=580)
+   user_icon_label.place(x=50,y=580)
 #******************************************
    tt="ARC_2022"
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
    label_bar.place(x=260,y=660)
 #****************************************
-   label_img=Label(secondfenetre, bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
-   label_img.place(x=320,y=0) 
+   # label_img=Label(secondfenetre, bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
+   # label_img.place(x=320,y=0) 
    def retour_acceuil():
       secondfenetre.destroy()
       exploitants.main_win()
    label_img=Label(secondfenetre, bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
    label_img.place(x=320,y=0)  
-   btn_flechea=Image.open('.\\back.png')
-   resize_btn_flechea = btn_flechea.resize((40,40))
-   photo_flechea=ImageTk.PhotoImage(resize_btn_flechea)
-   logina=Button(label_img,image=photo_flechea,width=40,height=40,bd=0,bg='white',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
-   logina.place(x=0,y=0) 
+   btn_flechem=Image.open('.\\play.png')
+   resize_btn_flechem = btn_flechem.resize((30,30))
+   photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
+   loginm=Button(buttons_label,image=photo_flechem,width=30,height=30,bd=0,bg='black',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=5,y=10) 
    def GetValue(event):
       e1.delete(0, END)
       e2.delete(0, END)
@@ -187,10 +191,20 @@ def main_win():
    global e2
    global e3
    global e4
-   tk.Label(label_img, text="Modifier", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=25, y=40)
-   tk.Label(label_img,bg="#3488FF" ,width=125,height=-3).place(x=195, y=53)
-   tk.Label(label_img, text="Supprimer", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=25, y=340)
-   tk.Label(label_img,bg="#3488FF" ,width=125,height=-3).place(x=195, y=355)
+   cpuc=Image.open('.\\bar_titre.png')
+   resize_cpuc = cpuc.resize((1070,70))
+   photocpuc=ImageTk.PhotoImage(resize_cpuc)
+   label_titrec=Label(label_img,image=photocpuc,width=1070,height=70,font=('yu gothic ui',11,'bold'))
+   label_titrec.place(x=-5,y=-5) 
+   cpu=Image.open('.\\bar_titre.png')
+   resize_cpu = cpu.resize((1070,10))
+   photocpu=ImageTk.PhotoImage(resize_cpu)
+   label_titre=Label(label_img,image=photocpu,width=1070,height=10,font=('yu gothic ui',11,'bold'))
+   label_titre.place(x=-5, y=355) 
+   # tk.Label(label_img, text="Modifier", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=25, y=40)
+   # tk.Label(label_img,bg="#3488FF" ,width=125,height=-3).place(x=195, y=53)
+   # tk.Label(label_img, text="Supprimer", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=25, y=340)
+   # tk.Label(label_img,bg="#3488FF" ,width=125,height=-3).place(x=195, y=355)
    tk.Label(label_img, text="ID de l'information", fg="#040405",bg="white" ,font=("Helvetica",13,"bold")).place(x=150, y=130)
    Label(label_img, text="Adresse ip", fg="#040405",bg="white" ,font=("Helvetica",13,"bold")).place(x=350, y=130)
    Label(label_img, text="Date", fg="#040405",bg="white" ,font=("Helvetica",13,"bold")).place(x=550, y=130)
@@ -215,8 +229,7 @@ def main_win():
    def afficher():
         secondfenetre.destroy()
         table.main_win()
-
-          
+  
    Button(label_img, text="Modifier",command = update,height=1, width= 13,bg='#3488FF',font=("Helvetica",14,"bold"),fg="white").place(x=340, y=260)
    Button(label_img, text="Acualiser",command = actialiser,height=1, width= 13,bg='#3488FF',font=("Helvetica",14,"bold"),fg="white").place(x=540, y=260)
    Button(label_img, text="Supprimer",command = delete,height=1, width= 13,bg='#3488FF',font=("Helvetica",14,"bold"),fg="white").place(x=250, y=540)

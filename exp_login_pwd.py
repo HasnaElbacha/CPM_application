@@ -8,7 +8,8 @@ from tkinter import messagebox as ms
 import sqlite3
 import admin_expl
 import exp_mode
-def main_login_pwd():
+import forgetsecond
+def main_login_pwd(Username):
 
    fenetre =Tk()
    fenetre.resizable(0,0)
@@ -77,7 +78,7 @@ def main_login_pwd():
             if results:
                 # retour_acceuil()
                 fenetre.destroy()
-                exp_mode.main_win()
+                exp_mode.main_win(Username)
                 print("retouuur")
             # if user do not exist
             else:
@@ -93,9 +94,11 @@ def main_login_pwd():
                    admin_expl.mainadminempl()
    login=Button(fenetre,image=photo_login, font=('yu gothic ui',13,'bold'),width=210,height=50,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=Searchpwd)
    login.place(x=75,y=350)
-        
+   def passforget():
+       fenetre.destroy()
+       forgetsecond.mainlogin_name()
    txt2='J\'ai oublié le mot de passe !'
-   heading=Button(fenetre,text=txt2,font=('yu gothic ui' ,15,'italic'),bg='#040405',fg='white',cursor='hand2' , border=0 ,takefocus=0)
+   heading=Button(fenetre,text=txt2,font=('yu gothic ui' ,15,'italic'),bg='#040405',fg='white',cursor='hand2' , border=0 ,takefocus=0,command=passforget)
    heading.place(x=360,y=350)
    def show():
         hide_code=Button(fenetre,image=photo,bg='#040405',activebackground='#040405',cursor='hand2',bd=0,command=hide)

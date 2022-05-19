@@ -20,8 +20,6 @@ def mmain():
     fenetre.config(background='#000000')
     exit_btn=Button(fenetre,text='X',command=lambda:exit_window(),font=("yu gothic ui",13,'bold'),fg='white',bg='black',bd=0,activebackground='grey')
     exit_btn.place(x=626,y=5)
-   #  welcome_label=Label(fenetre,text='Bienvenue dans ARC',font=("yu gothic ui",13,'bold'),fg='white',bg='black')
-   #  welcome_label.place(x=250,y=40)
     img=PhotoImage(file='.\\logo_back_remove.gif')
     bg_label=Label(fenetre,image=img,bg='black')
     bg_label.place(x=150,y=80)

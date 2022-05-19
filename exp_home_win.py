@@ -15,6 +15,8 @@ comp=True
 def main_win():
    
    secondfenetre =Tk()
+   secondfenetre.iconbitmap('lo.ico')
+   secondfenetre.title('ARC')
    secondfenetre.state("zoomed")
    secondfenetre.config(background="#FFFFFF")
    buttons_label = Label(secondfenetre, bg="black" ,height=237,width=45)
@@ -27,7 +29,7 @@ def main_win():
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
    user_icon_label.place(x=50,y=50)
-   txt="--------"
+   txt="Exploitant"
    compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
    compte.place(x=95,y=55)
   

@@ -12,7 +12,9 @@ import sqlite3
 import admin_expl
 import exp_login_pwd
 import os
+
 def mainlogin_name():
+    global Username
     fenetre =Tk()
     fenetre.resizable(0,0)
     height = 470
@@ -50,10 +52,10 @@ def mainlogin_name():
     #*****************************************
     btn_login=Image.open('.\\connexion.png')
     photo_login=ImageTk.PhotoImage(btn_login)
-
+    # user=username_entry.get()
+    # global user
+    # user="gfffffffff"
     #************************************************************************************  
-        
-    
     def Search():
         
         if username_entry.get() == '': 
@@ -75,8 +77,9 @@ def mainlogin_name():
             var= username_entry.get()         
     #************************************************************************************            
     def passloginpwd():
+        global Username
         fenetre.destroy()
-        exp_login_pwd.main_login_pwd()
+        exp_login_pwd.main_login_pwd(Username)
     login=Button(fenetre,image=photo_login, font=('yu gothic ui',13,'bold'),width=210,height=50,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=Search)
     login.place(x=220,y=350)
     
@@ -89,11 +92,7 @@ def mainlogin_name():
     photo_fleche=ImageTk.PhotoImage(resize_btn_fleche)
     login=Button(fenetre,image=photo_fleche, font=('yu gothic ui',13,'bold'),width=80,height=60,bd=0,bg='#040405',cursor='hand2',activebackground='#040405',command=retour_acceuil)
     login.place(x=0,y=0) 
-    def passregister():
-        fenetre.destroy()
-        register.main_register()
-    print(os.getlogin())
     fenetre.mainloop()
 
 # mainlogin_name()
-# def name():
+

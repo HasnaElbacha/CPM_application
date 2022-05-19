@@ -1,4 +1,5 @@
 from atexit import register
+import imp
 from tkinter import *
 from PIL import ImageTk , Image
 from tkinter import messagebox as ms
@@ -12,10 +13,13 @@ import admin_register
 import exp_mode
 import exp_exploitants
 import pandas as pd
+import admin_expl
 comp=True
-def main_win():
+def main_win(Username):
    
    secondfenetre =Tk()
+   secondfenetre.iconbitmap('lo.ico')
+   secondfenetre.title('ARC')
    secondfenetre.state("zoomed")
    secondfenetre.config(background="#FFFFFF")
    buttons_label = Label(secondfenetre, bg="black" ,height=237,width=45)
@@ -27,10 +31,10 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=50,y=50)
-   txt="-----"
+   user_icon_label.place(x=45,y=110)
+   txt=Username
    compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
-   compte.place(x=95,y=55)
+   compte.place(x=90,y=115)
   
 #********************************************
    
@@ -39,7 +43,7 @@ def main_win():
       if(comp==True):
             def saisire():
                secondfenetre.destroy()
-               exp_table.main_win()
+               exp_table.main_win(Username)
             saisir=Button(label_img,text="Saisir",font=('yu gothic ui' ,20,'bold'),bg='black',fg='#3488FF',width=20,height=1, border=10 ,cursor='hand2',takefocus=0,command=saisire)
             saisir.place(x=290,y=240) 
             comp=False
@@ -48,7 +52,7 @@ def main_win():
       else:
             def saisire():
                secondfenetre.destroy()
-               exp_table.main_win()
+               exp_table.main_win(Username)
             saisir=Button(label_img,text="Saisir",font=('yu gothic ui' ,20,'bold'),bg='#3488FF',fg='black',width=20,height=1, border=10 ,cursor='hand2',takefocus=0,command=saisire)
             saisir.place(x=290,y=240) 
             comp=True
@@ -58,7 +62,7 @@ def main_win():
       admin_register.main_win()
    def passeacc():
       secondfenetre.destroy()
-      exp_mode.main_win()
+      exp_mode.main_win(Username)
    lien_maison=Image.open('.\\maison_noir.png')
    photo1=ImageTk.PhotoImage(lien_maison)
    icon1=Button(buttons_label,image=photo1,bg='#3488FF', border=2,width=80,height=50,command=passeacc)
@@ -68,7 +72,7 @@ def main_win():
 #*******************************************
    def passeexp():
       secondfenetre.destroy()
-      exp_exploitants.main_win()
+      exp_exploitants.main_win(Username)
    lien_maison=Image.open('.\\expl_grey.png')
    photo4=ImageTk.PhotoImage(lien_maison)
    icon4=Button(buttons_label,image=photo4,bg='#040405', border=2,width=80,height=50,command=passeexp)
@@ -81,7 +85,7 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=70,y=580)
+   user_icon_label.place(x=50,y=500)
 #******************************************
    tt="ARC_2022"
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
@@ -89,8 +93,11 @@ def main_win():
 #****************************************
    label_img=Label(secondfenetre,bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
    label_img.place(x=320,y=0) 
-   tk.Label(label_img, text="Enrgistrement automatique", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=300, y=5)
-   tk.Label(label_img,bg="#3488FF",width=200,height=0).place(x=0, y=70)
+   cpu=Image.open('.\\bar_titre.png')
+   resize_cpu = cpu.resize((1070,70))
+   photocpu=ImageTk.PhotoImage(resize_cpu)
+   label_titre=Label(label_img,image=photocpu,width=1070,height=70,font=('yu gothic ui',11,'bold'))
+   label_titre.place(x=-5,y=-5)
    frame1 = tk.LabelFrame(label_img, text="Données")
    frame1.place(x=200,y=120,height=450, width=650)
    button2 = tk.Button(label_img, text="Load File")
@@ -126,11 +133,19 @@ def main_win():
       df.dropna(subset = ["Date"], inplace=True)
       df.dropna(subset = ["Heures"], inplace=True)
       df_rows = df.to_numpy().tolist() # turns the dataframe into a list of lists
-      for row in df_rows:
+   for row in df_rows:
          tv1.insert("", "end", values=row) # inserts each list into the treeview. For parameters see https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.insert
    def actualiser():
       secondfenetre.destroy()
-      main_win()
+      main_win(Username)
+   btn_flechem=Image.open('.\\play.png')
+   resize_btn_flechem = btn_flechem.resize((30,30))
+   photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
+   def retour_acceuil():
+            secondfenetre.destroy()
+            admin_expl.mainadminempl()
+   loginm=Button(buttons_label,image=photo_flechem,width=30,height=30,bd=0,bg='black',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=5,y=20)
    btnActualiser=Button(label_img,text="Actualiser",command=actualiser)
    btnActualiser.place(x=500,y=590)
    secondfenetre.mainloop()

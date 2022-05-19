@@ -13,12 +13,14 @@ import admin_register
 import parametre
 import exploitants
 import mode
-import csv
+import admin_expl
 import pandas as pd
 comp=True
 def main_win():
    
    secondfenetre =Tk()
+   secondfenetre.iconbitmap('lo.ico')
+   secondfenetre.title('ARC')
    secondfenetre.state("zoomed")
    secondfenetre.config(background="#FFFFFF")
    buttons_label = Label(secondfenetre, bg="black" ,height=237,width=45)
@@ -30,10 +32,10 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=50,y=50)
+   user_icon_label.place(x=70,y=70)
    txt="Admin"
    compte=Label(secondfenetre,text=txt,bg="black",fg="grey",width=14,height=1,font=('yu gothic ui',16,'bold'))
-   compte.place(x=95,y=55)
+   compte.place(x=120,y=75)
   
 #********************************************
    
@@ -103,12 +105,15 @@ def main_win():
    photo=ImageTk.PhotoImage(resize_image)
    user_icon_label=Label(buttons_label,image=photo,bg='#040405')
    user_icon_label.image=photo
-   user_icon_label.place(x=70,y=580)
+   user_icon_label.place(x=50,y=580)
 #******************************************
    label_img=Label(secondfenetre, bg="white",width=1050,height=33,font=('yu gothic ui',11,'bold'))
    label_img.place(x=320,y=0) 
-   tk.Label(label_img, text="Enrgistrement automatique", fg="#3488FF",bg="white" ,font=("Helvetica",25,"bold")).place(x=300, y=5)
-   tk.Label(label_img,bg="#3488FF",width=200,height=0).place(x=0, y=70)
+   cpu=Image.open('.\\bar_titre.png')
+   resize_cpu = cpu.resize((1070,70))
+   photocpu=ImageTk.PhotoImage(resize_cpu)
+   label_titre=Label(label_img,image=photocpu,width=1070,height=70,font=('yu gothic ui',11,'bold'))
+   label_titre.place(x=-5,y=-5) 
    frame1 = tk.LabelFrame(label_img, text="Données")
    frame1.place(x=200,y=120,height=450, width=650)
    button2 = tk.Button(label_img, text="Load File")
@@ -138,26 +143,33 @@ def main_win():
       df_rows = df.to_numpy().tolist() # turns the dataframe into a list of lists
       for row in df_rows:
                tv1.delete(row)
-   
+   def retour_acceuil():
+      secondfenetre.destroy()
+      admin_expl.mainadminempl()
+   btn_flechem=Image.open('.\\play.png')
+   resize_btn_flechem = btn_flechem.resize((30,30))
+   photo_flechem=ImageTk.PhotoImage(resize_btn_flechem)
+   loginm=Button(buttons_label,image=photo_flechem,width=30,height=30,bd=0,bg='black',cursor='hand2',activebackground='#e2bc74',command=retour_acceuil)
+   loginm.place(x=5,y=10)  
    def actualiser():
       secondfenetre.destroy()
       main_win()
    btnActualiser=Button(label_img,text="Actualiser",command=actualiser)
    btnActualiser.place(x=500,y=590)
-   tv1 = ttk.Treeview(frame1)
+   cols = ('Id', 'Nom de l\'expoitants', 'Email')
+   tv1 = ttk.Treeview(frame1,columns=cols)
    tv1.place(relheight=1, relwidth=1) # set the height and width of the widget to 100% of its container (frame1).
    treescrolly = tk.Scrollbar(frame1, orient="vertical", command=tv1.yview) # command means update the yaxis view of the widget
    treescrollx = tk.Scrollbar(frame1, orient="horizontal", command=tv1.xview) # command means update the xaxis view of the widget
    tv1.configure(xscrollcommand=treescrollx.set, yscrollcommand=treescrolly.set) # assign the scrollbars to the Treeview Widget
    treescrollx.pack(side="bottom", fill="x") # make the scrollbar fill the x axis of the Treeview widget
-   treescrolly.pack(side="right", fill="y") # make the scrollbar fill the y axis of the Treeview widget
+   # treescrolly.pack(side="right", fill="y") # make the scrollbar fill the y axis of the Treeview widget
    """If the file selected is valid this will load the file into the Treeview"""
    file_path =".\\script.csv"
    try:
         excel_filename = r"{}".format(file_path)
         if excel_filename[-4:] == ".csv":
             df = pd.read_csv(excel_filename)
-            print("in condition")
         else:
             df = pd.read_excel(excel_filename)
    except ValueError:
@@ -172,14 +184,14 @@ def main_win():
       df.dropna(subset = ["Adresse IP"], inplace=True)
       df.dropna(subset = ["Date"], inplace=True)
       df.dropna(subset = ["Heures"], inplace=True)
-      print(df)
       df_rows = df.to_numpy().tolist() # turns the dataframe into a list of lists
-      for row in df_rows:
+   for row in df_rows:
             tv1.insert("", "end", values=row)
+   # break
 #******************************************
    tt="ARC_2022"
    label_bar=Label(secondfenetre,text=tt,bg="black",fg="grey",width=140,height=2,font=('yu gothic ui',11,'bold'))
    label_bar.place(x=260,y=660)
 #****************************************
    secondfenetre.mainloop()
-main_win()
+# main_win()
